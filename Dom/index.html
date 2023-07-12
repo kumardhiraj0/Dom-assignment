@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <p id="catch"><span>i am span tag</span> Hello Dom</p>
+    <button onclick="hey()" id="changetxt">Change to click</button>
+
+    <button  id="changetxt1">Change to click</button>
+    <script>
+        let element = document.getElementById("catch");
+        let text = element.innerText;
+        let text1 = element.innerHTML;
+        console.log(text);
+        console.log(text1);
+
+        document.addEventListener("click",hello);
+        function hello(){
+            let heading = document.createElement("h1");
+            heading.className = "heading";
+            heading.innerText = "Hello bachhoooo Kaise hoo";
+            document.body.appendChild(heading);
+        }
+
+        function hey(){
+           let changetxt= document.getElementById("changetxt");
+           changetxt.innerText = "Text changed!"
+        }
+
+        let changetxt1 = document.querySelector("#changetxt1");
+        changetxt1.addEventListener("click",function(){
+            changetxt1.innerText = "changeText 1"
+            changetxt1.style.color = "red";
+            changetxt1.style.background = "black";
+            changetxt1.style.border = "2px solid yellow"
+
+
+        })
+    </script>
+</body>
+</html>

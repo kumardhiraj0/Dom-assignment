@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="changetext" onmouseover="clickme()">hower mouse to change</button>
+
+    <script>
+        function clickme(){
+            const btn = document.getElementById("changetext");
+            btn.textContent = "hello pw skills from my side";
+            btn.style.color = "green";
+            btn.style.border = "2px solid black";
+            btn.style.padding = "10px";
+        }
+    </script>
+</body>
+</html>
