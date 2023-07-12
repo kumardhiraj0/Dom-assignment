@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>onmouseout Event Example</title>
+  <style>
+    #myElement {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <div id="myElement" onmouseout="changeColor()"></div>
+
+  <script>
+    function changeColor() {
+      var element = document.getElementById("myElement");
+      element.style.backgroundColor = "blue";
+    }
+  </script>
+</body>
+</html>
